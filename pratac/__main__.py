@@ -1,7 +1,9 @@
-from pratac.argparser import ArgParser
 from argparse import Namespace
-from datetime import datetime, timedelta
-from pratac.definitions import person_offset, room_offset, get_persons_offset
+from datetime import datetime
+
+from pratac.argparser import ArgParser
+from pratac.definitions import get_persons_offset, person_offset, room_offset
+
 
 def calculate_week_offset(offset: int) -> int:
     start_date = "2022-09-14"

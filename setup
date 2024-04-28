@@ -1,8 +1,0 @@
-#!/bin/sh
-set -e
-
-MAIN_SCRIPT=src/pratac/__main__.py
-COMMAND_NAME=pratac
-
-ln -s "$PWD/$MAIN_SCRIPT" /usr/local/bin/$COMMAND_NAME
-echo "Installed $COMMAND_NAME command should be available now"
