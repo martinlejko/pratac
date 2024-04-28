@@ -1,5 +1,5 @@
 import argparse
-from definitions import person_offset
+from pratac.definitions import person_offset
 
 class ArgParser:
     def __init__(self):
