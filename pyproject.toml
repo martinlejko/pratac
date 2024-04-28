@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pratac"
+version = "0.1.0"
+description = "Dorm cleaning schedule viewer"
+authors = ["Martin Lejko <Martin.lejko@outlook.com>"]
+readme = "README.md"
+packages = [
+    { include = "pratac", from = "src" },
+]
+
+[tool.poetry.scripts]
+pratac = "pratac.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+mypy = "^1.10.0"
+ruff = "^0.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E","F","I"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+strict = true
+mypy_path = "src"
+
