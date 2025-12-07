@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "pratac"
-version = "0.1.0"
+version = "0.4.0"
 description = "Python script designed to streamline dorm room cleaning assignments "
 authors = ["Martin Lejko <Martin.lejko@outlook.com>"]
 readme = "README.md"
+
+[tool.poetry.scripts]
+pratac = "pratac.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.11"
